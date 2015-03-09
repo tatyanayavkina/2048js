@@ -1,0 +1,104 @@
+#gameover {
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+  opacity: 0.5;
+  background-color: #bbada0;
+}
+#gameover div {
+  width: 100%;
+  position: absolute;
+  top: 45%;
+  font-size: 60px;
+  text-align: center;
+}
+#gameover div a {
+  padding-left: 24px;
+  font-size: 48px;
+  color: #434343;
+  text-decoration: none;
+}
+#gameover div a:hover {
+  text-decoration: underline;
+}
+#gameover div a:visited {
+  color: #434343;
+}
+.score {
+  position: absolute;
+  top: 25px;
+  left: 80%;
+  padding: 10px;
+  font-size: 36px;
+  color: #bbada0;
+}
+.game-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #bbada0;
+}
+.game-area {
+  margin-top: 100px;
+  display: table;
+  border-spacing: 14px;
+}
+.game-area-row {
+  display: table-row;
+}
+.game-area-cell {
+  display: table-cell;
+  width: 120px;
+  height: 120px;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+.game-area-cell_empty {
+  background-color: rgba(238, 228, 218, 0.34902);
+}
+.game-area-cell_filled {
+  font-family: Arial;
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+  color: #434343;
+}
+.game-area-cell_filled_2 {
+  background-color: #eee4da;
+}
+.game-area-cell_filled_4 {
+  background-color: #ede0c8;
+}
+.game-area-cell_filled_8 {
+  background-color: #f2b179;
+}
+.game-area-cell_filled_16 {
+  background-color: #f59563;
+}
+.game-area-cell_filled_32 {
+  background-color: #f67c5f;
+}
+.game-area-cell_filled_64 {
+  background-color: #f65e3b;
+}
+.game-area-cell_filled_128 {
+  background-color: #edcf72;
+}
+.game-area-cell_filled_256 {
+  background-color: #edcc61;
+}
+.game-area-cell_filled_512 {
+  background-color: #edc850;
+}
+.game-area-cell_filled_1024 {
+  font-size: 48px;
+  background-color: #edc53f;
+}
+.game-area-cell_filled_2048 {
+  font-size: 48px;
+  background-color: #edc22e;
+}

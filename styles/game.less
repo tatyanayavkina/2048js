@@ -1,0 +1,151 @@
+@tile-size: 120px;
+
+@color-game-wrapper: rgb(187, 173, 160);
+
+@color-empty-tile: rgba(238, 228, 218, 0.34902);
+@color-filled-tile-2: #eee4da;
+@color-filled-tile-4: #ede0c8;
+@color-filled-tile-8: #f2b179;
+@color-filled-tile-16: #f59563;
+@color-filled-tile-32: #f67c5f;
+@color-filled-tile-64: #f65e3b;
+@color-filled-tile-128: #edcf72;
+@color-filled-tile-256: #edcc61;
+@color-filled-tile-512: #edc850;
+@color-filled-tile-1024: #edc53f;
+@color-filled-tile-2048: #edc22e;
+
+@color-dark-text-tile: #434343;
+@color-light-text-tile: rgb(249, 246, 242);
+
+#gameover{
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
+
+  opacity: 0.5;
+
+  background-color: @color-game-wrapper;
+
+  & div{
+      width: 100%;
+      position: absolute;
+      top: 45%;
+
+      font-size: 60px;
+      text-align: center;
+
+      & a{
+          padding-left: 24px;
+
+          font-size: 48px;
+          color: @color-dark-text-tile;
+
+          text-decoration: none;
+
+          &:hover{
+              text-decoration: underline;
+          }
+          &:visited{
+              color: @color-dark-text-tile;
+          }
+      }
+  }
+
+}
+
+.score{
+    position: absolute;
+    top: 25px;
+    left: 80%;
+    padding: 10px;
+
+    font-size: 36px;
+    color: @color-game-wrapper;
+}
+
+.game-wrapper{
+   max-width: 500px;
+   margin: 0 auto;
+
+   border-radius: 10px;
+
+   background-color: @color-game-wrapper;
+}
+
+//игровая зона
+.game-area {
+  margin-top: 100px;
+
+  display: table;
+
+  border-spacing: 14px;
+
+  &-row{
+     display: table-row;
+  }
+
+  //клетка
+  &-cell {
+      display: table-cell;
+      width: @tile-size;
+      height: @tile-size;
+      vertical-align: middle;
+
+      border-radius: 10px;
+
+      //пустая клетка
+      &_empty{
+          background-color: @color-empty-tile;
+      }
+
+      &_filled{
+          font-family: Arial;
+          font-size: 56px;
+          font-weight: bold;
+          text-align: center;
+          color: @color-dark-text-tile;
+
+          &_2{
+            background-color: @color-filled-tile-2;
+          }
+          &_4{
+            background-color: @color-filled-tile-4;
+          }
+          &_8{
+            background-color: @color-filled-tile-8;
+          }
+          &_16{
+            background-color: @color-filled-tile-16;
+          }
+          &_32{
+            background-color: @color-filled-tile-32;
+          }
+          &_64{
+            background-color: @color-filled-tile-64;
+          }
+          &_128{
+            background-color: @color-filled-tile-128;
+          }
+          &_256{
+            background-color: @color-filled-tile-256;
+          }
+          &_512{
+            background-color: @color-filled-tile-512;
+          }
+          &_1024{
+            font-size: 48px;
+            background-color: @color-filled-tile-1024;
+          }
+          &_2048{
+            font-size: 48px;
+            background-color: @color-filled-tile-2048;
+          }
+      }
+  }
+
+}
